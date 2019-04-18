@@ -1,0 +1,128 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 21652
+License: Customer
+
+Current time: 	Tue Apr 16 19:19:41 EDT 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2048x1152
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Ryan
+User home directory: C:/Users/Ryan
+User working directory: C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor/vivado.log
+Vivado journal file location: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor/vivado.jou
+Engine tmp dir: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor/.Xil/Vivado-21652-Ryan-pc
+
+GUI allocated memory:	133 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 480 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 45 MB (+44709kb) [00:00:23]
+// [Engine Memory]: 450 MB (+320031kb) [00:00:23]
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Ryan\Desktop\Spring 2019\ECE351\FinalProject\ECE-351-Group-1\TempSensor\TempSensor.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 62 MB (+15639kb) [00:00:28]
+// [Engine Memory]: 481 MB (+8867kb) [00:00:28]
+// Tcl Message: open_project {C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor/TempSensor.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 485 MB. GUI used memory: 39 MB. Current time: 4/16/19 7:19:46 PM EDT
+// Tcl Message: open_project {C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor/TempSensor.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/MS USER/Desktop/Vivado/Lab1/TempSensor' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 513 MB (+8722kb) [00:00:41]
+// [Engine Memory]: 539 MB (+578kb) [00:00:48]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 54 MB. Current time: 4/16/19 7:20:05 PM EDT
+// Project name: TempSensor; location: C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/TempSensor; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 688.809 ; gain = 47.672 
+dismissDialog("Open Project"); // bs (cj)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 568 MB (+1890kb) [00:00:54]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 68 MB (+2290kb) [00:00:55]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.
+// PAPropertyPanels.initPanels (TOP_Sensor.vhd) elapsed time: 0.3s
+// Elapsed time: 132 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Main(Behavioral) (TOP_Sensor.vhd)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Main(Behavioral) (TOP_Sensor.vhd)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("TOP_Sensor.vhd", 186, 125); // cd (w, cj)
+// [GUI Memory]: 73 MB (+2631kb) [00:03:25]
+// Elapsed time: 33 seconds
+selectCodeEditor("TOP_Sensor.vhd", 56, 450); // cd (w, cj)
+selectCodeEditor("TOP_Sensor.vhd", 334, 136); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 79 MB (+1757kb) [00:03:52]
+// [GUI Memory]: 83 MB (+632kb) [00:04:14]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 213 seconds
+selectCodeEditor("TOP_Sensor.vhd", 239, 397); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 589 MB. GUI used memory: 46 MB. Current time: 4/16/19 7:26:54 PM EDT
+// Elapsed time: 26 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 90 MB (+2893kb) [00:09:04]
+// [GUI Memory]: 95 MB (+39kb) [00:22:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 46 MB. Current time: 4/16/19 7:56:54 PM EDT

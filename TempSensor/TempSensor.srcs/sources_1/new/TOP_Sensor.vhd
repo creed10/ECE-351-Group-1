@@ -70,43 +70,34 @@ begin
 
 process
 begin
-
-if(start = '1') then
-    wait for 15ms;
-    --set address
-    address <= "1000000";
-    start <= '0';
-else -- read temps
-    wait for 13ms;
-    address <= "0000000";
-    ----------------------Read TEMP--------------------------
-    temp(15 downto 8) <= dataRead(7 downto 0);
-    temp(7 downto 0) <= dataRead(7 downto 0);
-    
-    -----------------------Read HUM--------------------------
-    hum(15 downto 8) <= dataRead(7 downto 0);
-    hum(7 downto 0) <= dataRead(7 downto 0);
-    
-    wait for 1sec;
-end if;
+    if(start = '1') then
+        wait for 15ms;
+        --set address
+        address <= "1000000";
+        start <= '0';
+    else -- read temps
+        wait for 13ms;
+        address <= "0000000";
+        ----------------------Read TEMP--------------------------
+        temp(15 downto 8) <= dataRead(7 downto 0);
+        temp(7 downto 0) <= dataRead(7 downto 0);
+        
+        -----------------------Read HUM--------------------------
+        hum(15 downto 8) <= dataRead(7 downto 0);
+        hum(7 downto 0) <= dataRead(7 downto 0);
+        
+        wait for 1sec;
+    end if;
 end process;
 
 process(temp)
-
-variable t : integer := 0;
-
+    variable t : integer := 0;
 begin
-t := to_integer(signed(temp));
-t := t / 65536;
-t := (t * 165) - 40;
-output <= std_logic_vector(to_signed(t, 16));
+    t := to_integer(signed(temp));
+    t := t / 65536;
+    t := (t * 165) - 40;
+    output <= std_logic_vector(to_signed(t, 16));
 end process;
-
-
-
-
-
-
 
 
 
