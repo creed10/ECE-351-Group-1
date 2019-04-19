@@ -152,3 +152,10 @@ void DisableCaches() {
 #endif
 #endif
 }
+
+
+void testSegment(){
+
+	//XPAR_AXI_GPIO_0_DEVICE_ID;
+
+}
