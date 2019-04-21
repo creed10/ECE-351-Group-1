@@ -35,6 +35,9 @@
  *
  * 	Engineers	:	Ryan Pauly
  * 					Tanner Fry
+ *					Cristian Romo
+ *					Hunter Mann
+ *
  *
  * 	DATE		:	4/17/2019
  *
@@ -56,6 +59,27 @@
 #include "xil_cache.h"
 #include "xil_printf.h"
 #include "xparameters.h"
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+//AXI GPIO driver
+#include "xgpio.h"
+//information about AXI peripherals
+#include "xparameters.h"
+
+#define BLANK	10	// Blank pattern index
+#define MINUS 	11
+// The seven-segment display patterns for digits 0 to 9 and blank.
+
+u32 pattern[12] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x98, 0xFF, 0xBF};
+// The patterns for activating the anodes for seven-segment displays 0 to 7, respectively.
+u32 anode[8] = {0xFE, 0xFD, 0xFB, 0xF7, 0xEF, 0xDF, 0xBF, 0x7F};
+
+
+
+// GPIOs for seven-segment displays and DIP switches
+XGpio ssd;
+
 
 #ifdef __MICROBLAZE__
 #define TIMER_FREQ_HZ XPAR_CPU_M_AXI_DP_FREQ_HZ
@@ -65,19 +89,89 @@
 
 PmodHYGRO myDevice;
 
+float time1 = 0.0;
+
 void DemoInitialize();
-void DemoRun();
+int DemoRun();
 void DemoCleanup();
 void EnableCaches();
 void DisableCaches();
+//void driveSevSeg();
+
+
+
+void mostRecentValue(int a);
+
+void displayTemp(float a);
+void displayPattern(u32 segment, u32 patIndex);
+int Round(float a);
+
 
 int main() {
-   DemoInitialize();
-   DemoRun();
-   DemoCleanup();
+	DemoInitialize();
+	//7-segment:
+	XGpio_Initialize(&ssd, XPAR_AXI_GPIO_0_DEVICE_ID);
+	int temp = 0;
+	//int temp = Round(((int)(temp_degc * 100)) % 100);
+	displayPattern(1, 0);
+	displayPattern(0, 0);
+
+	while(1){
+		//fprintf(stderr, "temp value: %f", temp);
+
+
+		int digits = 0;
+
+		//Find digitCount.
+		if(temp >= 10 && temp < 100){
+			//2 digit number
+			digits = 2;
+		}else if(temp < 10){
+			//1 digit number
+			digits = 1;
+		}else{
+			//3 digit number
+			digits = 3;
+		}
+
+		int hundresPlace = 0;
+		int tensPlace = 0;
+		int onesPlace = 0;
+
+		if(digits == 2){
+
+			tensPlace = temp / 10;
+
+			int hold = 0;
+			hold = tensPlace * 10;
+
+			onesPlace = temp - hold;
+
+			displayPattern(1, tensPlace);
+			displayPattern(0, onesPlace);
+		}
+
+
+		//fprintf(stderr, "timer value: %f", time);
+
+		if(time1 >= 0.000000019)
+		{
+			fprintf(stderr, "\n\n\n\n\n");
+			temp = DemoRun();
+			time1 = 0.0;
+		}
+		time1 += 0.00000000001;
+	}
+
+
+   //DemoRun();
+	DemoCleanup();
+
+   //driveSevSeg();
 
    return 0;
 }
+
 
 void DemoInitialize() {
    EnableCaches();
@@ -97,39 +191,63 @@ void DemoCleanup() {
    DisableCaches();
 }
 
-void DemoRun() {
-   float temp_degc, hum_perrh, temp_degf;
-   while (1) {
-      temp_degc = HYGRO_getTemperature(&myDevice);
-      temp_degf = HYGRO_tempC2F(temp_degc);
-      hum_perrh = HYGRO_getHumidity(&myDevice);
+int DemoRun() {
+	float temp_degc, hum_perrh, temp_degf;
+
+	temp_degc = HYGRO_getTemperature(&myDevice);
+	temp_degf = HYGRO_tempC2F(temp_degc);
+	hum_perrh = HYGRO_getHumidity(&myDevice);
 
 
-      xil_printf(
-         "Temperature: %d.%02d deg C  Humidity: %d.%02d RH\n\r",
-         (int) temp_degc,
-         ((int) (temp_degc * 100)) % 100,
-         (int) hum_perrh,
-         ((int) (hum_perrh * 100)) % 100
-      );
+	xil_printf(
+		"Temperature: %d.%02d deg C  Humidity: %d.%02d RH\n\r",
+		(int) temp_degc,
+		((int) (temp_degc * 100)) % 100,
+		(int) hum_perrh,
+		((int) (hum_perrh * 100)) % 100
+	);
 
+	int temp = Round((int)(temp_degc));
+	// %f does not work with xil_printf
+	// instead, converting float to a pair of ints to display %.2f.
 
-      /*
-      xil_printf(
-         "Temperature: %d.%02d deg F  Humidity: %d.%02d RH\n\r",
-         (int) temp_degf,
-         ((int) (temp_degf * 100)) % 100,
-         (int) hum_perrh,
-         ((int) (hum_perrh * 100)) % 100
-      );
-      */
-      // %f does not work with xil_printf
-      // instead, converting float to a pair of ints to display %.2f.
+	// 1 sample per second maximum, as per 9.2.1 in HDC1080 reference manual
+	//sleep(5);
 
-      // 1 sample per second maximum, as per 9.2.1 in HDC1080 reference manual
-      sleep(1);
-   }
+	return temp;
+
 }
+
+
+// This function displays a specific pattern on a seven-segment display.
+void displayPattern(u32 segment, u32 patIndx)
+{
+	// Use the anode activation and display patterns to drive the SSD
+	XGpio_DiscreteWrite(&ssd, 1, anode[segment]);
+	XGpio_DiscreteWrite(&ssd, 2, pattern[patIndx]);
+
+	//Display Temp symbol.
+
+	int t;
+	for (t = 0; t < 10000; t++);
+}
+
+int Round(float a){
+
+	double integral;
+	float fraction = (float)modf(a, &integral);
+
+	if(fraction >= 0.5){
+		integral += 1;
+	}
+	if(fraction <= -0.5){
+		integral -= 1;
+	}
+
+	return (int)integral;
+}
+
+
 
 void EnableCaches() {
 #ifdef __MICROBLAZE__
@@ -154,8 +272,4 @@ void DisableCaches() {
 }
 
 
-void testSegment(){
 
-	//XPAR_AXI_GPIO_0_DEVICE_ID;
-
-}
