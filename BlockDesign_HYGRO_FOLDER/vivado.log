@@ -5129,3 +5129,6 @@ close [ open {C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Grou
 add_files -fileset constrs_1 {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/BlockDesign_HYGRO_FOLDER/new_HYGRO_BD_HDL_2.srcs/constrs_1/new/design_3_new_XDC.xdc}}
 set_property target_constrs_file {C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/BlockDesign_HYGRO_FOLDER/new_HYGRO_BD_HDL_2.srcs/constrs_1/new/design_3_new_XDC.xdc} [current_fileset -constrset]
 save_constraints -force
+open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/BlockDesign_HYGRO_FOLDER/new_HYGRO_BD_HDL_2.srcs/sources_1/bd/design_3_new/design_3_new.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 15:21:59 2019...
