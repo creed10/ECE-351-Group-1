@@ -1,0 +1,2373 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 16628
+License: Customer
+
+Current time: 	Sun Apr 21 16:37:58 EDT 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2048x1152
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 10 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Ryan
+User home directory: C:/Users/Ryan
+User working directory: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Ryan/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/vivado.log
+Vivado journal file location: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/vivado.jou
+Engine tmp dir: 	C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/.Xil/Vivado-16628-Ryan-pc
+
+GUI allocated memory:	138 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 498 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 42 MB (+41232kb) [00:00:15]
+// [Engine Memory]: 467 MB (+338078kb) [00:00:15]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Ryan\Desktop\Spring 2019\ECE351\newBlockDesign_WithPWMOutput\newBlockDesign_WithPWMOutput.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.xpr} 
+// [GUI Memory]: 64 MB (+21317kb) [00:00:18]
+// [Engine Memory]: 498 MB (+7817kb) [00:00:18]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 498 MB. GUI used memory: 38 MB. Current time: 4/21/19 4:38:00 PM EDT
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 545 MB (+23863kb) [00:00:28]
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 573 MB (+61kb) [00:00:33]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 641 MB (+41770kb) [00:00:36]
+// [GUI Memory]: 78 MB (+10805kb) [00:00:39]
+// [Engine Memory]: 676 MB (+2633kb) [00:00:44]
+// Tcl Message: open_project {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Ryan/Desktop/Spring 2019/ECE351/FinalProject/ECE-351-Group-1/newBlockDesign_WithPWMOutput' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Downloads/vivado-library-2018.2-2'; using path 'C:/Users/Ryan/Downloads/vivado-library-2018.2-2' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Ryan/Downloads/vivado-library-2018.2-2'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 700 MB. GUI used memory: 62 MB. Current time: 4/21/19 4:38:26 PM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 816.246 ; gain = 191.684 
+// Project name: newBlockDesign_WithPWMOutput; location: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput; part: xc7a35tcpg236-1
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_RESET
+// [GUI Memory]: 83 MB (+1015kb) [00:01:03]
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// [GUI Memory]: 88 MB (+1612kb) [00:01:07]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 16:38:49 2019] Launched impl_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/impl_1/runme.log 
+// [Engine Memory]: 713 MB (+3879kb) [00:01:11]
+dismissDialog("Generate Bitstream"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 61 MB. Current time: 4/21/19 4:39:16 PM EDT
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 94 MB (+1627kb) [00:03:00]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 102 MB (+3542kb) [00:05:55]
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 349 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cj): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (N, X): TRUE
+selectComboBox(PAResourceItoN.NewExportHardwareDialog_EXPORT_TO, "Choose Location...", 1); // e (N, X)
+// Elapsed time: 41 seconds
+setFolderChooser("C:/Users/Ryan/Desktop/Spring 2019/ECE351");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 47 seconds
+dismissDialog("Export Hardware"); // X (cj)
+// Tcl Message: file mkdir {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.sdk} 
+// Tcl Message: file copy -force {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/impl_1/design_5_wrapper.sysdef} {C:/Users/Ryan/Desktop/Spring 2019/ECE351/design_5_wrapper.hdf}  
+// bs (cj):  Export Hardware : addNotify
+dismissDialog("Export Hardware"); // bs (cj)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// [GUI Memory]: 108 MB (+85kb) [00:19:43]
+// PAPropertyPanels.initPanels (design_5_wrapper.vhd) elapsed time: 0.3s
+// Elapsed time: 1302 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0 Adding cell -- digilentinc.com:IP:PmodHYGRO:1.0 - PmodHYGRO_0 Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1 Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram Successfully read diagram <design_5> from BD file <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// PAPropertyPanels.initPanels (design_5_wrapper.vhd) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 928.992 ; gain = 89.625 
+// 'bA' command handler elapsed time: 16 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// PAPropertyPanels.initPanels (axi_timer_0) elapsed time: 0.2s
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 71 MB. Current time: 4/21/19 5:09:17 PM EDT
+// [GUI Memory]: 115 MB (+1965kb) [00:50:58]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 69 MB. Current time: 4/21/19 5:39:17 PM EDT
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// [GUI Memory]: 122 MB (+1142kb) [01:09:21]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// Elapsed time: 2603 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// Elapsed time: 314 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs (cj):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bs (cj)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 4); // O (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// 'dw' command handler elapsed time: 3 seconds
+// [GUI Memory]: 130 MB (+2037kb) [01:19:10]
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // M (C, v)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // M (C, v)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // B (f, v)
+// Elapsed time: 10 seconds
+setFolderChooser("C:/Users/Ryan/Desktop/Spring 2019/ECE351/TannersIP");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {c:/Users/Ryan/Downloads/vivado-library-2018.2-2 {C:/Users/Ryan/Desktop/Spring 2019/ECE351/TannersIP}} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// bs (cj):  Refresh All IP Repositories : addNotify
+// Tcl Message: update_ip_catalog 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Ryan/Downloads/vivado-library-2018.2-2'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Ryan/Desktop/Spring 2019/ECE351/TannersIP'. 
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 137 MB (+316kb) [01:19:31]
+// c (v): Add Repository: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a (c)
+dismissDialog("Add Repository"); // c (v)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (v)
+// [GUI Memory]: 145 MB (+1796kb) [01:19:50]
+// [GUI Memory]: 160 MB (+8097kb) [01:19:52]
+// [GUI Memory]: 170 MB (+1983kb) [01:19:52]
+dismissDialog("Settings"); // v (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 179 MB (+95kb) [01:19:57]
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+// [GUI Memory]: 188 MB (+6kb) [01:19:58]
+dismissDialog("Open Block Design"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, cj)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Tanne"); // OverlayTextField (Q, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Tanner"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "TannerIP", 0, "TannerIP", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "TannerIP", 0); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "TannerIP", 0, "TannerIP", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// [GUI Memory]: 198 MB (+1169kb) [01:20:14]
+// Tcl Message: startgroup 
+// bs (cj):  Add IP : addNotify
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:TOP:1.0 TOP_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// Tcl Command: 'set_property location {5.5 2097 232} [get_bd_cells TOP_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5.5 2097 232} [get_bd_cells TOP_0] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_timer_0_pwm0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_timer_0_pwm0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_timer_0_pwm0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /axi_timer_0_pwm0 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_bd_objs [get_bd_nets axi_timer_0_pwm0] [get_bd_intf_nets microblaze_0_axi_periph_M05_AXI] [get_bd_cells axi_timer_0] 
+// TclEventType: RUN_DELETE
+// bs (cj):  Confirm Delete : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Elapsed time: 14 seconds
+dismissDialog("Confirm Delete"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// PAPropertyPanels.initPanels (PWM_Output) elapsed time: 0.2s
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports PWM_Output] 
+// [GUI Memory]: 212 MB (+4155kb) [01:20:43]
+// Tcl Command: 'set_property location {5 1750 260} [get_bd_cells TOP_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5 1750 260} [get_bd_cells TOP_0] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins microblaze_0_axi_periph/M05_AXI_rdata] [get_bd_pins TOP_0/data] 
+// PAPropertyPanels.initPanels (M05_AXI_rdata_1) elapsed time: 0.2s
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// Elapsed time: 35 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 952, 295, 1377, 655, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 951, 299, 1377, 655, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 943, 327, 1377, 655, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z (ai, cj)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1027, 246, 1377, 655, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z (ai, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_HIGHLIGHT_CYCLE_COLORS, "Cycle Highlight Colors"); // ac (cj)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1026, 299, 1377, 655, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // Z (ai, cj)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_PORT, "Create Port..."); // ac (ai, cj)
+// aV (cj): Create Port: addNotify
+selectCheckBox(PAResourceAtoD.CreateRSBPortDialog_CREATE_VECTOR, "Create vector:", true); // g (N, aV): TRUE
+setSpinner(PAResourceAtoD.CreateRSBPortDialog_FROM, "15"); // P (N, aV)
+selectComboBox(PAResourceAtoD.CreateRSBPortDialog_DIRECTION, "Output", 1); // e (N, aV)
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "output"); // X (N, aV)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aV)
+// HOptionPane Error: 'The name 'output' cannot be used because it is a keyword in a Hardware Description Language. (Vivado)'
+selectButton("PAResourceAtoD.CreateRSBPortDialog_INVALID_NAME_FOR_PORT_OK", "OK"); // JButton (A, H)
+setText(PAResourceAtoD.CreateRSBPortDialog_PORT_NAME, "myLEDOutput", true); // X (N, aV)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aV)
+// TclEventType: RSB_ADD_OBJECT
+dismissDialog("Create Port"); // aV (cj)
+// bs (cj):  Create Port : addNotify
+// Tcl Message: create_bd_port -dir O -from 15 -to 0 myLEDOutput 
+dismissDialog("Create Port"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: connect_bd_net [get_bd_ports myLEDOutput] [get_bd_pins TOP_0/output] 
+// Tcl Message: endgroup 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// bs (cj):  Save Design : addNotify
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd>  Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ui/bd_21562dd4.ui>  
+dismissDialog("Save Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (x)
+// f (cj): Launch Runs: addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cj)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cj)
+// x (cj): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Elaborate Design"); // x (cj)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: generate_target all [get_files {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd}}] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'generate_target' cannot be canceled. Please wait for command to finish. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd>  
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.vhd 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/sim/design_5.vhd VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IPIntegrator design C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [Common 17-681] Processing pending cancel. 
+// TclEventType: RUN_RESET
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd}}] 
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.191 ; gain = 0.000 
+// Tcl Message: launch_runs design_5_lmb_bram_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_lmb_bram_0, cache-ID = 1e3b38b2fe92f51a; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:00:25 2019] Launched design_5_lmb_bram_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_lmb_bram_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1208.398 ; gain = 2.207 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: wait_on_run design_5_lmb_bram_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:00:26 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:00:31 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:00:36 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:00:41 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:00:51 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:01:01 2019] Waiting for design_5_lmb_bram_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_lmb_bram_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_lmb_bram_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_lmb_bram_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_lmb_bram_0, cache-ID = 1e3b38b2fe92f51a. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:01:03 2019... 
+// Tcl Message: [Sun Apr 21 18:01:06 2019] design_5_lmb_bram_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 1208.734 ; gain = 0.336 
+// Tcl Message: launch_runs design_5_PmodHYGRO_0_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_PmodHYGRO_0_0, cache-ID = 38c146082d729653; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:01:13 2019] Launched design_5_PmodHYGRO_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_PmodHYGRO_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1232.852 ; gain = 24.117 
+// Tcl Message: wait_on_run design_5_PmodHYGRO_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:01:14 2019] Waiting for design_5_PmodHYGRO_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:01:19 2019] Waiting for design_5_PmodHYGRO_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:01:24 2019] Waiting for design_5_PmodHYGRO_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:01:29 2019] Waiting for design_5_PmodHYGRO_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:01:39 2019] Waiting for design_5_PmodHYGRO_0_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log design_5_PmodHYGRO_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_PmodHYGRO_0_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_PmodHYGRO_0_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_PmodHYGRO_0_0, cache-ID = 38c146082d729653. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:01:34 2019... 
+// Tcl Message: [Sun Apr 21 18:01:39 2019] design_5_PmodHYGRO_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 1233.059 ; gain = 0.207 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_rst_clk_wiz_0_100M_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_rst_clk_wiz_0_100M_0, cache-ID = fc1ac451ca5f760f; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// [Engine Memory]: 749 MB (+53kb) [01:24:03]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:01:44 2019] Launched design_5_rst_clk_wiz_0_100M_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_rst_clk_wiz_0_100M_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1233.484 ; gain = 0.426 
+// Tcl Message: wait_on_run design_5_rst_clk_wiz_0_100M_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:01:44 2019] Waiting for design_5_rst_clk_wiz_0_100M_0_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 80 MB. Current time: 4/21/19 6:01:49 PM EDT
+// Tcl Message: [Sun Apr 21 18:01:50 2019] Waiting for design_5_rst_clk_wiz_0_100M_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:01:55 2019] Waiting for design_5_rst_clk_wiz_0_100M_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:02:00 2019] Waiting for design_5_rst_clk_wiz_0_100M_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:02:10 2019] Waiting for design_5_rst_clk_wiz_0_100M_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log design_5_rst_clk_wiz_0_100M_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_rst_clk_wiz_0_100M_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_rst_clk_wiz_0_100M_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_rst_clk_wiz_0_100M_0, cache-ID = fc1ac451ca5f760f. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:02:06 2019... 
+// Tcl Message: [Sun Apr 21 18:02:10 2019] design_5_rst_clk_wiz_0_100M_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 1233.750 ; gain = 0.266 
+// Tcl Message: launch_runs design_5_microblaze_0_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_microblaze_0_0, cache-ID = 54a4b6906642594a; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:02:19 2019] Launched design_5_microblaze_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_microblaze_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.883 ; gain = 6.133 
+// Tcl Message: wait_on_run design_5_microblaze_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:02:19 2019] Waiting for design_5_microblaze_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:02:24 2019] Waiting for design_5_microblaze_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:02:29 2019] Waiting for design_5_microblaze_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:02:35 2019] Waiting for design_5_microblaze_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:02:45 2019] Waiting for design_5_microblaze_0_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log design_5_microblaze_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_microblaze_0_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_microblaze_0_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_microblaze_0_0, cache-ID = 54a4b6906642594a. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:02:40 2019... 
+// Tcl Message: [Sun Apr 21 18:02:45 2019] design_5_microblaze_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_axi_uartlite_0_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_axi_uartlite_0_0, cache-ID = b3088d0b9b7bec07; cache size = 16.595 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:02:50 2019] Launched design_5_axi_uartlite_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_axi_uartlite_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_axi_uartlite_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:02:51 2019] Waiting for design_5_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:02:56 2019] Waiting for design_5_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:01 2019] Waiting for design_5_axi_uartlite_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:06 2019] Waiting for design_5_axi_uartlite_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_axi_uartlite_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_axi_uartlite_0_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_axi_uartlite_0_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_axi_uartlite_0_0, cache-ID = b3088d0b9b7bec07. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:03:08 2019... 
+// Tcl Message: [Sun Apr 21 18:03:12 2019] design_5_axi_uartlite_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_dlmb_v10_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_dlmb_v10_0, cache-ID = e717f5cebb54dac2; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:03:17 2019] Launched design_5_dlmb_v10_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_dlmb_v10_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_dlmb_v10_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:03:17 2019] Waiting for design_5_dlmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:22 2019] Waiting for design_5_dlmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:28 2019] Waiting for design_5_dlmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:33 2019] Waiting for design_5_dlmb_v10_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message:  *** Running vivado     with args -log design_5_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_dlmb_v10_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_dlmb_v10_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_dlmb_v10_0, cache-ID = e717f5cebb54dac2. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:03:35 2019... 
+// Tcl Message: [Sun Apr 21 18:03:38 2019] design_5_dlmb_v10_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_ilmb_v10_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_ilmb_v10_0, cache-ID = e717f5cebb54dac2; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:03:43 2019] Launched design_5_ilmb_v10_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_ilmb_v10_0_synth_1/runme.log 
+// Tcl Message: wait_on_run design_5_ilmb_v10_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:03:43 2019] Waiting for design_5_ilmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:48 2019] Waiting for design_5_ilmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:53 2019] Waiting for design_5_ilmb_v10_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:03:58 2019] Waiting for design_5_ilmb_v10_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_ilmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_ilmb_v10_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_ilmb_v10_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_ilmb_v10_0, cache-ID = e717f5cebb54dac2. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:04:00 2019... 
+// Tcl Message: [Sun Apr 21 18:04:04 2019] design_5_ilmb_v10_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_dlmb_bram_if_cntlr_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_dlmb_bram_if_cntlr_0, cache-ID = 160718f88725a390; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:04:11 2019] Launched design_5_dlmb_bram_if_cntlr_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_dlmb_bram_if_cntlr_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_dlmb_bram_if_cntlr_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:04:12 2019] Waiting for design_5_dlmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:04:17 2019] Waiting for design_5_dlmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:04:22 2019] Waiting for design_5_dlmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:04:28 2019] Waiting for design_5_dlmb_bram_if_cntlr_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: [Sun Apr 21 18:04:39 2019] Waiting for design_5_dlmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log design_5_dlmb_bram_if_cntlr_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_dlmb_bram_if_cntlr_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_dlmb_bram_if_cntlr_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_dlmb_bram_if_cntlr_0, cache-ID = 160718f88725a390. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:04:32 2019... 
+// Tcl Message: [Sun Apr 21 18:04:39 2019] design_5_dlmb_bram_if_cntlr_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: launch_runs design_5_mdm_1_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_mdm_1_0, cache-ID = fcc0f2b207422889; cache size = 16.595 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:04:48 2019] Launched design_5_mdm_1_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_mdm_1_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_mdm_1_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:04:49 2019] Waiting for design_5_mdm_1_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:04:54 2019] Waiting for design_5_mdm_1_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:04:59 2019] Waiting for design_5_mdm_1_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:05 2019] Waiting for design_5_mdm_1_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message:  *** Running vivado     with args -log design_5_mdm_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_mdm_1_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_mdm_1_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_mdm_1_0, cache-ID = fcc0f2b207422889. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:05:09 2019... 
+// Tcl Message: [Sun Apr 21 18:05:10 2019] design_5_mdm_1_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: launch_runs design_5_xbar_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:05:13 2019] Launched design_5_xbar_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_xbar_0_synth_1/runme.log 
+// Tcl Message: wait_on_run design_5_xbar_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:05:14 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:19 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:24 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:30 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:40 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:05:50 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:06:01 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:06:11 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// Tcl Message: [Sun Apr 21 18:06:32 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:06:53 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:07:09 2019] design_5_xbar_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:05 ; elapsed = 00:01:55 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: launch_runs design_5_axi_gpio_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_axi_gpio_0_0, cache-ID = 2be23487a3c78d7d; cache size = 17.359 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:07:15 2019] Launched design_5_axi_gpio_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_axi_gpio_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_axi_gpio_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:07:15 2019] Waiting for design_5_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:07:21 2019] Waiting for design_5_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:07:26 2019] Waiting for design_5_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:07:31 2019] Waiting for design_5_axi_gpio_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:07:42 2019] Waiting for design_5_axi_gpio_0_0_synth_1 to finish... 
+// Tcl Message:  *** Running vivado     with args -log design_5_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_axi_gpio_0_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_axi_gpio_0_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_axi_gpio_0_0, cache-ID = 2be23487a3c78d7d. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:07:39 2019... 
+// Tcl Message: [Sun Apr 21 18:07:42 2019] design_5_axi_gpio_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_ilmb_bram_if_cntlr_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_ilmb_bram_if_cntlr_0, cache-ID = 91af3ff19f11d590; cache size = 17.360 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:07:48 2019] Launched design_5_ilmb_bram_if_cntlr_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_ilmb_bram_if_cntlr_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_ilmb_bram_if_cntlr_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:07:49 2019] Waiting for design_5_ilmb_bram_if_cntlr_0_synth_1 to finish... 
+// [GUI Memory]: 224 MB (+1795kb) [01:30:11]
+// Tcl Message: [Sun Apr 21 18:07:54 2019] Waiting for design_5_ilmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:07:59 2019] Waiting for design_5_ilmb_bram_if_cntlr_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:08:04 2019] Waiting for design_5_ilmb_bram_if_cntlr_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_ilmb_bram_if_cntlr_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_ilmb_bram_if_cntlr_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_ilmb_bram_if_cntlr_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_ilmb_bram_if_cntlr_0, cache-ID = 91af3ff19f11d590. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:08:06 2019... 
+// Tcl Message: [Sun Apr 21 18:08:10 2019] design_5_ilmb_bram_if_cntlr_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_axi_gpio_1_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_axi_gpio_1_0, cache-ID = 43195a787dbfb412; cache size = 17.360 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:08:15 2019] Launched design_5_axi_gpio_1_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_axi_gpio_1_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// Tcl Message: wait_on_run design_5_axi_gpio_1_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:08:15 2019] Waiting for design_5_axi_gpio_1_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:08:20 2019] Waiting for design_5_axi_gpio_1_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:08:26 2019] Waiting for design_5_axi_gpio_1_0_synth_1 to finish... 
+// [GUI Memory]: 236 MB (+584kb) [01:30:49]
+// Tcl Message: [Sun Apr 21 18:08:31 2019] Waiting for design_5_axi_gpio_1_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_axi_gpio_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_axi_gpio_1_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_axi_gpio_1_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_axi_gpio_1_0, cache-ID = 43195a787dbfb412. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:08:34 2019... 
+// Tcl Message: [Sun Apr 21 18:08:36 2019] design_5_axi_gpio_1_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1239.883 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs design_5_clk_wiz_0_0_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_5_clk_wiz_0_0, cache-ID = df6278a4ce8e8913; cache size = 17.360 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:08:44 2019] Launched design_5_clk_wiz_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_clk_wiz_0_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1241.219 ; gain = 1.336 
+// Tcl Message: wait_on_run design_5_clk_wiz_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:08:44 2019] Waiting for design_5_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:08:50 2019] Waiting for design_5_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:08:55 2019] Waiting for design_5_clk_wiz_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:00 2019] Waiting for design_5_clk_wiz_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message:  *** Running vivado     with args -log design_5_clk_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_5_clk_wiz_0_0.tcl   ****** Vivado v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source design_5_clk_wiz_0_0.tcl -notrace INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_5_clk_wiz_0_0, cache-ID = df6278a4ce8e8913. INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 18:09:02 2019... 
+// Tcl Message: [Sun Apr 21 18:09:06 2019] design_5_clk_wiz_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 1241.484 ; gain = 0.266 
+// Tcl Message: launch_runs design_5_TOP_0_0_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:09:08 2019] Launched design_5_TOP_0_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_TOP_0_0_synth_1/runme.log 
+// Tcl Message: wait_on_run design_5_TOP_0_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:09:08 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:14 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:19 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:24 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: [Sun Apr 21 18:09:35 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:46 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:09:56 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:10:07 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:10:28 2019] Waiting for design_5_TOP_0_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:10:38 2019] design_5_TOP_0_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:01:30 . Memory (MB): peak = 1241.617 ; gain = 0.063 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 
+// Tcl Message: Top: design_5_wrapper 
+// [Engine Memory]: 862 MB (+78727kb) [01:33:17]
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 81 MB. Current time: 4/21/19 6:11:00 PM EDT
+// [Engine Memory]: 1,016 MB (+116820kb) [01:33:23]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 81 MB. Current time: 4/21/19 6:11:17 PM EDT
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_floorplan.xgd elapsed time: 0.6s
+// [Engine Memory]: 1,073 MB (+6545kb) [01:33:38]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,156 MB (+30889kb) [01:33:40]
+// Xgd.load filename: C:/Xilinx/Vivado/2017.4/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 2.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.2s
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1316.527 ; gain = 74.848 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1356.586 ; gain = 114.906 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1356.586 ; gain = 114.906 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/masterXDC.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/masterXDC.xdc] 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 24 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 24 instances  
+// OpenDesignTask elapsed time: 687.2s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1607.977 ; gain = 366.297 
+// Tcl Message: 35 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1607.977 ; gain = 366.359 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 682 seconds
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "72 I/O Ports"); // h (f, cj)
+// Elapsed time: 19 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 1,202 MB. GUI used memory: 111 MB. Current time: 4/21/19 6:11:55 PM EDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, masterXDC.xdc]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, masterXDC.xdc]", 4, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("masterXDC.xdc", 429, 45); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, masterXDC.xdc]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, masterXDC.xdc]", 4, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// as (cj): Remove Sources: addNotify
+// bs (as):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/masterXDC.xdc}}] -no_script -reset -force -quiet 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/masterXDC.xdc}} 
+dismissDialog("Remove Sources"); // bs (as)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("PAResourceTtoZ.ValidateRSBDesign_BLOCK_DESIGN_ALREADY_IN_VALIDATED_STATE_Rerun Validate Design", "Rerun Validate Design"); // JButton (A, G)
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bs (cj):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: validate_bd_design -force 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,214 MB (+16kb) [01:35:18]
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1614.320 ; gain = 0.000 
+// dK (cj): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bs (cj)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (dK)
+dismissDialog("Critical Messages"); // dK (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("PAResourceTtoZ.ValidateRSBDesign_BLOCK_DESIGN_ALREADY_IN_VALIDATED_STATE_Rerun Validate Design", "Rerun Validate Design"); // JButton (A, G)
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bs (cj):  Validate Design : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design -force 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1614.320 ; gain = 0.000 
+// dK (cj): Critical Messages: addNotify
+dismissDialog("Validate Design"); // bs (cj)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (dK)
+dismissDialog("Critical Messages"); // dK (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 111 MB. Current time: 4/21/19 6:13:19 PM EDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x (cj): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Run Synthesis"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // am (cj)
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd>  Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ui/bd_21562dd4.ui>  
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_5.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.vhd 
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/sim/design_5.vhd VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 112 MB. Current time: 4/21/19 6:13:34 PM EDT
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodHYGRO_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram . INFO: [BD 41-1029] Generation completed for the IP Integrator block TOP_0 . 
+// Tcl Message: Exporting to file C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hw_handoff/design_5.hwh Generated Block Design Tcl file C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hw_handoff/design_5_bd.tcl 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: Generated Hardware Definition File C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.hwdef 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:13:46 2019] Launched synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:13:46 2019] Launched impl_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1652.656 ; gain = 36.258 
+// aP (cj): Launch Run Critical Messages: addNotify
+// Elapsed time: 53 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (aP)
+dismissDialog("Launch Run Critical Messages"); // aP (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd}}] 
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1664.922 ; gain = 11.871 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// [Engine Memory]: 1,300 MB (+25995kb) [01:37:11]
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,330 MB. GUI used memory: 113 MB. Current time: 4/21/19 6:14:54 PM EDT
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_5' (10#1) [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.vhd:2375] INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'jc_pin10_iobuf' of component 'IOBUF' [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd:256] INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1708.844 ; gain = 55.793 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1708.844 ; gain = 55.793 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.dcp' for cell 'design_5_i/mdm_1' 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,332 MB. GUI used memory: 89 MB. Current time: 4/21/19 6:15:04 PM EDT
+// Engine heap size: 1,332 MB. GUI used memory: 90 MB. Current time: 4/21/19 6:15:04 PM EDT
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_lmb_bram_0/design_5_lmb_bram_0.dcp' for cell 'design_5_i/microblaze_0_local_memory/lmb_bram' 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 354 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.4 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 18 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 13 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// Tcl Message: Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0_board.xdc] for cell 'design_5_i/clk_wiz_0/inst' Finished Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0_board.xdc] for cell 'design_5_i/clk_wiz_0/inst' Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0.xdc] for cell 'design_5_i/clk_wiz_0/inst' 
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// Tcl Message: Finished Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0.xdc] for cell 'design_5_i/clk_wiz_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc:50] 
+// Tcl Message: Finished Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc] for cell 'design_5_i/mdm_1/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,332 MB. GUI used memory: 90 MB. Current time: 4/21/19 6:15:13 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:45 . Memory (MB): peak = 1798.820 ; gain = 146.164 
+// Elapsed time: 46 seconds
+dismissDialog("Reloading"); // bs (cj)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "72 I/O Ports"); // h (f, cj)
+// Elapsed time: 10 seconds
+selectTableHeader(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "Name", 0); // t (O, cj)
+// [Engine Memory]: 1,365 MB (+416kb) [01:37:58]
+// PAPropertyPanels.initPanels (myLEDOutput[15]) elapsed time: 0.2s
+// Elapsed time: 12 seconds
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[15] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 55, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// PAPropertyPanels.initPanels (myLEDOutput[15]) elapsed time: 0.3s
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[15]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[14] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 54, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[14]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[13] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 53, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[13]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[12] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 52, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[12]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[11] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 51, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[11]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[10] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 50, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[10]}]] 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[9] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 49, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[9]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[8] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 48, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[8]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[7] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 47, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[7]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[6] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 46, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[6]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[5] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 45, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[5]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[4] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 44, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[4]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[3] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 43, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[3]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[2] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 42, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[2]}]] 
+// Elapsed time: 11 seconds
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[1] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 41, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[1]}]] 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[0] ; OUT ;  ;  ;  ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 40, "default (LVCMOS18)", 9); // t (O, cj)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {myLEDOutput[0]}]] 
+// Elapsed time: 10 seconds
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[0] ; OUT ;  ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 40, (String) null, 6); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Elapsed time: 13 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[0]}]] 
+// Tcl Message: place_ports {myLEDOutput[0]} U16 
+// Tcl Message: endgroup 
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[1] ; OUT ;  ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 41, (String) null, 6); // t (O, cj)
+// [GUI Memory]: 249 MB (+674kb) [01:40:02]
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Elapsed time: 14 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[1]}]] 
+// Tcl Message: place_ports {myLEDOutput[1]} E19 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Elapsed time: 12 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[2]}]] 
+// Tcl Message: place_ports {myLEDOutput[2]} U19 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[3]}]] 
+// Tcl Message: place_ports {myLEDOutput[3]} V19 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[4]}]] 
+// Tcl Message: place_ports {myLEDOutput[4]} W18 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[5]}]] 
+// Tcl Message: place_ports {myLEDOutput[5]} U15 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[6]}]] 
+// Tcl Message: place_ports {myLEDOutput[6]} U14 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[7]}]] 
+// Tcl Message: place_ports {myLEDOutput[7]} V14 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[8]}]] 
+// Tcl Message: place_ports {myLEDOutput[8]} V13 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[9]}]] 
+// Tcl Message: place_ports {myLEDOutput[9]} V3 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[10]}]] 
+// Tcl Message: place_ports {myLEDOutput[10]} W3 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[11]}]] 
+// Tcl Message: place_ports {myLEDOutput[11]} U3 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+selectTable(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "myLEDOutput[12] ; OUT ;  ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ;  ; N/A", 52, (String) null, -1); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[12]}]] 
+// Tcl Message: place_ports {myLEDOutput[12]} P3 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[13]}]] 
+// Tcl Message: place_ports {myLEDOutput[13]} N3 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[14]}]] 
+// Tcl Message: place_ports {myLEDOutput[14]} P1 
+// Tcl Message: endgroup 
+applyEnter(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, (String) null); // t (O, cj)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: startgroup 
+// Tcl Message: set_property package_pin "" [get_ports [list  {led_16bits_tri_io[15]}]] 
+// Tcl Message: place_ports {myLEDOutput[15]} L1 
+// Tcl Message: endgroup 
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_DESIGN, "save_design"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// E (cj): Save Constraints: addNotify
+selectButton(PAResourceItoN.ModifiedConstraintsWithoutTargetDialog_UPDATE, "Update"); // a (E)
+// a (cj): Save Constraints: addNotify
+dismissDialog("Save Constraints"); // E (cj)
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "master", true); // X (C, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bs (cj):  Save Constraints : addNotify
+// Tcl Message: close [ open {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/master.xdc} w ] 
+// Tcl Message: add_files -fileset constrs_1 {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/master.xdc}} 
+// Tcl Message: set_property target_constrs_file {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/constrs_1/new/master.xdc} [current_fileset -constrset] 
+dismissDialog("Save Constraints"); // a (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints -force 
+// TclEventType: DESIGN_SAVE
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Save Constraints"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /TOP_0_output 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M03_AXI] [get_bd_intf_nets axi_gpio_1_GPIO2] [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_cells axi_gpio_1] 
+// TclEventType: RUN_DELETE
+// bs (cj):  Confirm Delete : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Elapsed time: 14 seconds
+dismissDialog("Confirm Delete"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_SELECT_AREA, "System_select_area"); // u (f, cj): TRUE
+// Run Command: PAResourceCommand.PACommandNames_SELECT_AREA
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_ports dip_switches_16bits] [get_bd_intf_ports led_16bits] 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// bs (cj):  Save Design : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd>  Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ui/bd_21562dd4.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// bs (cj):  Validate Design : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1812.336 ; gain = 0.000 
+// dK (cj): Critical Messages: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Validate Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (dK)
+dismissDialog("Critical Messages"); // dK (cj)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_5_xbar_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs design_5_xbar_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:21:40 2019] Launched design_5_xbar_0_synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_xbar_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1816.684 ; gain = 2.152 
+// Tcl Message: wait_on_run design_5_xbar_0_synth_1 
+// Tcl Message: [Sun Apr 21 18:21:40 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:21:46 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:21:51 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: [Sun Apr 21 18:21:56 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:22:07 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:22:17 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:22:28 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:22:38 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:22:59 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// Tcl Message: [Sun Apr 21 18:23:20 2019] Waiting for design_5_xbar_0_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Sun Apr 21 18:23:36 2019] design_5_xbar_0_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:06 ; elapsed = 00:01:56 . Memory (MB): peak = 1816.684 ; gain = 0.000 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_5 
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd}}] 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_5.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd>  Wrote  : <C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ui/bd_21562dd4.ui>  
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.vhd 
+// Tcl Message: VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/sim/design_5.vhd VHDL Output written to : C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodHYGRO_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr . INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram . INFO: [BD 41-1029] Generation completed for the IP Integrator block TOP_0 . 
+// Tcl Message: Exporting to file C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hw_handoff/design_5.hwh Generated Block Design Tcl file C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hw_handoff/design_5_bd.tcl 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Hardware Definition File C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.hwdef 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd}}] 
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: refresh_design 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1869.785 ; gain = 15.953 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_5' (10#1) [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/synth/design_5.vhd:2500] INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'jc_pin10_iobuf' of component 'IOBUF' [C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/hdl/design_5_wrapper.vhd:137] INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655] 
+// Tcl Message: 	Parameter DRIVE bound to: 12 - type: integer  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1900.379 ; gain = 46.547 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1900.379 ; gain = 46.547 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 115 MB. Current time: 4/21/19 6:24:06 PM EDT
+// Engine heap size: 1,365 MB. GUI used memory: 116 MB. Current time: 4/21/19 6:24:07 PM EDT
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_lmb_bram_0/design_5_lmb_bram_0.dcp' for cell 'design_5_i/microblaze_0_local_memory/lmb_bram' 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 338 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.4 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers. INFO: [Opt 31-141] Inserted 13 OBUFs to IO ports without IO buffers. 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// Tcl Message: Finished Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0.xdc] for cell 'design_5_i/clk_wiz_0/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_clk_wiz_0_0/design_5_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_microblaze_0_0/design_5_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc:50] 
+// Tcl Message: Finished Parsing XDC File [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc] for cell 'design_5_i/mdm_1/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/ip/design_5_mdm_1_0/design_5_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_5_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_5_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 94 MB. Current time: 4/21/19 6:24:14 PM EDT
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// Schematic: addNotify
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1958.094 ; gain = 105.152 
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 168 seconds
+dismissDialog("Reloading"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 4000 ms.
+// ah (cj): Bitstream Generation Completed: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+dismissDialog("Critical Messages"); // M (cj)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "40 I/O Ports"); // h (f, cj)
+selectTableHeader(PAResourceQtoS.SignalTablePanel_SIGNAL_TABLE, "Name", 0); // t (O, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (4)", 4); // k (j, cj)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 119 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cj)
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Apr 21 18:26:51 2019] Launched synth_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/synth_1/runme.log [Sun Apr 21 18:26:52 2019] Launched impl_1... Run output will be captured here: C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (cj): Bitstream Generation Completed: addNotify
+// Elapsed time: 372 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cj): Export Hardware: addNotify
+// Elapsed time: 20 seconds
+selectComboBox(PAResourceItoN.NewExportHardwareDialog_EXPORT_TO, "Choose Location...", 2); // e (N, X)
+// Elapsed time: 25 seconds
+setFolderChooser("C:/Users/Ryan/Desktop/Spring 2019/ECE351/design6_export");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+// 'm' command handler elapsed time: 51 seconds
+dismissDialog("Export Hardware"); // X (cj)
+// bs (cj):  Export Hardware : addNotify
+// Tcl Message: file copy -force {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/impl_1/design_5_wrapper.sysdef} {C:/Users/Ryan/Desktop/Spring 2019/ECE351/design6_export/design_5_wrapper.hdf}  
+dismissDialog("Export Hardware"); // bs (cj)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// Elapsed time: 523 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.srcs/sources_1/bd/design_5/design_5.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_0_100M_bus_struct_reset 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /M05_AXI_rdata_1 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cj): Re-customize IP: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Re-customize IP"); // r (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /mdm_1_debug_sys_rst 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd)]", 3); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd), TOP_0 : design_5_TOP_0_0 (design_5_TOP_0_0.xci)]", 5); // B (D, cj)
+// x (cj): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: DG_GRAPH_STALE
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_locked 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_locked 
+dismissDialog("Show IP Hierarchy"); // x (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd), TOP_0 : design_5_TOP_0_0 (design_5_TOP_0_0.xci), design_5_TOP_0_0(design_5_TOP_0_0_arch) (design_5_TOP_0_0.vhd)]", 6, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd), TOP_0 : design_5_TOP_0_0 (design_5_TOP_0_0.xci), design_5_TOP_0_0(design_5_TOP_0_0_arch) (design_5_TOP_0_0.vhd)]", 6, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd), TOP_0 : design_5_TOP_0_0 (design_5_TOP_0_0.xci), design_5_TOP_0_0(design_5_TOP_0_0_arch) (design_5_TOP_0_0.vhd), U0 : TOP(Behavioral) (myIP.vhd)]", 7, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_5_wrapper(STRUCTURE) (design_5_wrapper.vhd), design_5_i : design_5 (design_5.bd), design_5(STRUCTURE) (design_5.vhd), TOP_0 : design_5_TOP_0_0 (design_5_TOP_0_0.xci), design_5_TOP_0_0(design_5_TOP_0_0_arch) (design_5_TOP_0_0.vhd), U0 : TOP(Behavioral) (myIP.vhd)]", 7, false, false, false, false, false, true); // B (D, cj) - Double Click

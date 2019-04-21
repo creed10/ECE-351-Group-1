@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_5_TOP_0_0_synth_1" LaunchDir="C:/Users/Ryan/Desktop/Spring 2019/ECE351/newBlockDesign_WithPWMOutput/newBlockDesign_WithPWMOutput.runs/design_5_TOP_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
