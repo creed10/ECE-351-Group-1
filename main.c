@@ -67,6 +67,49 @@
 //information about AXI peripherals
 #include "xparameters.h"
 
+#include "xbasic_types.h"
+
+
+#include "stdio.h"
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+
+
+#include "PWM.h"
+#define PWM
+
+
+//XPAR_AXI_GPIO_0_DEVICE_ID
+
+//#define PWM1_addr XPAR_TIMER1_BASEADDR
+//#define PWM2_addr XPAR_TIMER2_BASEADDR
+//#define PWM3_addr XPAR_TIMER3_BASEADDR
+
+/*
+int main(){
+
+
+
+
+	//unsigned long BaseAddr, double period, double Duty
+	//period is in seconds, and duty cycle is in decimal, not percentage
+
+	print("\n\n");
+	PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.99);
+	print("\r\nsuccess");
+
+	//PWM_x(PWM2_addr, 0.022, 0.5);
+
+	//PWM_x(PWM3_addr, 0.022, 0.25);
+
+
+	return 1;
+}
+*/
+
+
+
 #define BLANK	10	// Blank pattern index
 #define MINUS 	11
 // The seven-segment display patterns for digits 0 to 9 and blank.
@@ -79,6 +122,8 @@ u32 anode[8] = {0xFE, 0xFD, 0xFB, 0xF7, 0xEF, 0xDF, 0xBF, 0x7F};
 
 // GPIOs for seven-segment displays and DIP switches
 XGpio ssd;
+XGpio pwm;
+
 
 
 #ifdef __MICROBLAZE__
@@ -96,12 +141,8 @@ int DemoRun();
 void DemoCleanup();
 void EnableCaches();
 void DisableCaches();
-//void driveSevSeg();
-
-
 
 void mostRecentValue(int a);
-
 void displayTemp(float a);
 void displayPattern(u32 segment, u32 patIndex);
 int Round(float a);
@@ -111,15 +152,36 @@ int main() {
 	DemoInitialize();
 	//7-segment:
 	XGpio_Initialize(&ssd, XPAR_AXI_GPIO_0_DEVICE_ID);
+
+
 	int temp = 0;
 	//int temp = Round(((int)(temp_degc * 100)) % 100);
 	displayPattern(1, 0);
 	displayPattern(0, 0);
 
 	while(1){
-		//fprintf(stderr, "temp value: %f", temp);
+
+		//fprintf(stderr, "temp value: %f \n", temp);
+		////////////////////////////////
+		//
+		//		Fan Control
+		//
+		////////////////////////////////
 
 
+		/*
+		if(temp <= 19){
+			PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.25);
+		}else if(temp >= 21){
+			PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.99);
+		}
+		*/
+
+		//////////////////////////////
+		//
+		//		7-Segment Control
+		//
+		//////////////////////////////
 		int digits = 0;
 
 		//Find digitCount.
@@ -154,15 +216,26 @@ int main() {
 
 		//fprintf(stderr, "timer value: %f", time);
 
+
 		if(time1 >= 0.000000019)
 		{
 			fprintf(stderr, "\n\n\n\n\n");
 			temp = DemoRun();
+
+			if(temp >= 21){
+				PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.99);
+			}else{
+				PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.25);
+			}
+
 			time1 = 0.0;
 		}
+
 		time1 += 0.00000000001;
 	}
 
+
+	fprint("EXIT");
 
    //DemoRun();
 	DemoCleanup();
@@ -219,6 +292,8 @@ int DemoRun() {
 }
 
 
+
+
 // This function displays a specific pattern on a seven-segment display.
 void displayPattern(u32 segment, u32 patIndx)
 {
@@ -270,6 +345,4 @@ void DisableCaches() {
 #endif
 #endif
 }
-
-
 
