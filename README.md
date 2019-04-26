@@ -20,4 +20,4 @@ have updated to show the hardware wrapper location as well as the "MicroBlaze" p
 10. Open program to read from serial / COM ports (PuTTy) and setup connection to COM port the board is connected to to see data.
 # OPTIONAL
 11. Open python script and setup to read from that COM port rather than PuTTy (note that two programs cannot read the COM port at once), and the python script will take that data and output to a CSV file.
-Open CSV file, load in the addon for Excel provided for creating the chart, and run the macro to get a chart of Temperature and Duty Cycles.
+12. Open CSV file, load in the addon for Excel provided for creating the chart, and run the macro to get a chart of Temperature and Duty Cycles.
