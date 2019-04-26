@@ -18,6 +18,6 @@ have updated to show the hardware wrapper location as well as the "MicroBlaze" p
 8. Next, the way I checked the device was by opening PuTTy and creating a comport connection to the USB port that is connected to the Basys3. (The one that's powering the device). This is a serial connection and will show the printed data from the main.c file.
 9. Once the FPGA has been programmed, run the file in debug hardware mode. (Hit the drop-down arrow and select it.)
 10. Open program to read from serial / COM ports (PuTTy) and setup connection to COM port the board is connected to to see data.
-OPTIONAL
+# OPTIONAL
 11. Open python script and setup to read from that COM port rather than PuTTy (note that two programs cannot read the COM port at once), and the python script will take that data and output to a CSV file.
 Open CSV file, load in the addon for Excel provided for creating the chart, and run the macro to get a chart of Temperature and Duty Cycles.
