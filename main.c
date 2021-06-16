@@ -84,45 +84,6 @@
 #define TCSR0_x	((*(volatile uint32_t *)(XPAR_AXI_TIMER_0_BASEADDR+0x00)))
 #define TCSR1_x	((*(volatile uint32_t *)(XPAR_AXI_TIMER_0_BASEADDR+0x10)))
 
-
-
-
-
-
-
-
-
-//XPAR_AXI_GPIO_0_DEVICE_ID
-
-//#define PWM1_addr XPAR_TIMER1_BASEADDR
-//#define PWM2_addr XPAR_TIMER2_BASEADDR
-//#define PWM3_addr XPAR_TIMER3_BASEADDR
-
-/*
-int main(){
-
-
-
-
-	//unsigned long BaseAddr, double period, double Duty
-	//period is in seconds, and duty cycle is in decimal, not percentage
-
-	print("\n\n");
-	PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.50);
-	print("\r\nsuccess");
-
-	//PWM_x(PWM2_addr, 0.022, 0.5);
-
-	//PWM_x(PWM3_addr, 0.022, 0.25);
-
-
-	return 1;
-}
-
-*/
-
-
-
 #define BLANK	10	// Blank pattern index
 #define MINUS 	11
 // The seven-segment display patterns for digits 0 to 9 and blank.
@@ -163,19 +124,16 @@ int Round(float a);
 
 int main() {
 	DemoInitialize();
+
 	//7-segment:
 	XGpio_Initialize(&ssd, XPAR_AXI_GPIO_0_DEVICE_ID);
 
 
 	int temp = 0;
-	//int temp = Round(((int)(temp_degc * 100)) % 100);
 	displayPattern(1, 0);
 	displayPattern(0, 0);
 
-
-	//PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.25);
-
-
+	//continuously read temperature data
 	while(1){
 
 		displayPattern(1, 12);
@@ -211,19 +169,19 @@ int main() {
 			displayPattern(2, onesPlace);
 		}
 
+		
 		if(time1 >= 0.000000019)
 		{
-			//fprintf(stderr, "\n\n\n\n\n");
+			//note, this counts down for easier period and high time setting.
 
-			TCSR0_x = 0x0; //note, this counts down for easier period and high time setting.
+			TCSR0_x = 0x0; 			
 			TCSR1_x = 0x0;
 
 			temp = DemoRun();
 
 			printf("Temperature: %u", temp);
 
-			//PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.25);
-
+			//change PWM signal to fan based on temperature
 			if(temp >= 21){
 				PWM_x(XPAR_AXI_TIMER_0_BASEADDR, 0.00004, 0.99);
 				printf(" DUTY: %.2f\n", 0.99);
@@ -232,6 +190,7 @@ int main() {
 				printf(" DUTY: %.2f\n", 0.25);
 			}
 
+			//reset timer to start next cycle
 			time1 = 0.0;
 		}
 
